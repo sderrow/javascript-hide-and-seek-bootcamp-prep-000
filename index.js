@@ -18,6 +18,25 @@ function deepestChild() {
 
   var deepest = grand
   var deepestLevel = 0
+  var levels = [0]
+  var lst = [grand]
 
-  while (
+  while (lst) {
+    current = lst.shift()
+    currentLevel = levels.shift()
+    
+    child_list = current.children
+    if (child_list.length == 0) {
+      if (currentLevel > deepestLevel) {
+        deepest = current
+      }
+    } else {
+      for (let i = 0; i < child_list.length; i++) {
+        lst.push(child_list[i])
+        levels.push(currentLevel + 1)
+      }
+    }
+  }
+
+  return deepest
 }
