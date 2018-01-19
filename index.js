@@ -24,7 +24,7 @@ function deepestChild() {
   while (lst) {
     current = lst.shift()
     currentLevel = levels.shift()
-    
+
     child_list = current.children
     if (child_list.length == 0) {
       if (currentLevel > deepestLevel) {
