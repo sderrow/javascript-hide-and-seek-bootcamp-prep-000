@@ -42,4 +42,3 @@ function deepestChild() {
 
   return deepest
 }
-deepestChild()
