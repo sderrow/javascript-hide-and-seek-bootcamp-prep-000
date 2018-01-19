@@ -22,7 +22,7 @@ function deepestChild() {
   var lst = [grand]
   var current, currentLevel, child_list
 
-  while (lst) {
+  while (lst.length > 0) {
     current = lst.shift()
     currentLevel = levels.shift()
 
