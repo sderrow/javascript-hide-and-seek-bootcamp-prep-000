@@ -20,7 +20,7 @@ function deepestChild() {
   var deepestLevel = 0
   var levels = [0]
   var lst = [grand]
-  var current, currentLevel
+  var current, currentLevel, child_list
 
   while (lst) {
     current = lst.shift()
