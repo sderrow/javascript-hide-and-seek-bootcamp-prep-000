@@ -25,7 +25,6 @@ function deepestChild() {
   while (lst) {
     current = lst.shift()
     currentLevel = levels.shift()
-    console.log(current, currentLevel)
 
     child_list = current.children
     if (child_list.length == 0) {
