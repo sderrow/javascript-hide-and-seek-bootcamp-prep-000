@@ -30,6 +30,7 @@ function deepestChild() {
     if (child_list.length == 0) {
       if (currentLevel > deepestLevel) {
         deepest = current
+        deepestLevel = currentLevel
       }
     } else {
       for (let i = 0; i < child_list.length; i++) {
